@@ -1,0 +1,153 @@
+/* General Body and Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    color: #333333; /* Text color */
+}
+
+/* About Me Section Styling */
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: #ecf0f1; /* Light grey background */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.about-me-content {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50; /* Dark blue-grey text */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #34495e; /* Dark grey text for better readability */
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Dark blue-grey text */
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 0;
+}
+
+.skills-list li {
+    background-color: #1abc9c; /* Teal color */
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #16a085; /* Darker teal on hover */
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Replace with the color matching your palette */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #2980b9; /* Slightly darker for hover effect */
+}
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-content {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-title {
+        font-size: 1.3rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .skills-list li {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Nihar Dholaria</title>
+    <link rel="stylesheet" href="/stylesheets/services.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <%- include('partials/nav') %> <!-- Include navbar -->
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h1 class="section-title">My Services</h1>
+
+            <div class="services-container">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <img src="/images/web-development.png" alt="Service 1" class="service-image">
+                    <div class="service-content">
+                        <h2 class="service-title">Web Development</h2>
+                        <p class="service-description">
+                            I specialize in building high-performance, modern websites and web applications that cater to your business needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <img src="/images/rb_2311.png" alt="Service 2" class="service-image">
+                    <div class="service-content">
+                        <h2 class="service-title">AI Solutions</h2>
+                        <p class="service-description">
+                            I provide AI-powered solutions, such as machine learning models and natural language processing, to enhance business processes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <img src="/images/app-development.jpeg" alt="Service 3" class="service-image">
+                    <div class="service-content">
+                        <h2 class="service-title">Mobile App Development</h2>
+                        <p class="service-description">
+                            I create intuitive, user-friendly mobile applications for both Android and iOS platforms, ensuring seamless user experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+    <script src="/public/javascripts/script.js"></script>
+</body>
+</html>

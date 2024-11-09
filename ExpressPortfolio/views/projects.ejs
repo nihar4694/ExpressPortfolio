@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nihar Dholaria</title>
+    <link rel="stylesheet" href="/stylesheets/projects.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <%- include('partials/nav') %> <!-- Include navbar -->
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h1 class="section-title">My Projects</h1>
+
+            <div class="projects-container">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="/images/project.png" alt="Project 1" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Project 1: AI-Powered Web App</h2>
+                        <p class="project-description">
+                            A web application that uses machine learning algorithms to provide personalized recommendations based on user behavior.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="/images/project.png" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Project 2: E-commerce Platform</h2>
+                        <p class="project-description">
+                            A fully functional e-commerce platform built with React and Node.js, offering a seamless shopping experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="/images/project.png" alt="Project 3" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Project 3: Task Management App</h2>
+                        <p class="project-description">
+                            A task management web application with features like task prioritization, deadlines, and real-time collaboration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+    <script src="/public/javascripts/script.js"></script>
+</body>
+</html>

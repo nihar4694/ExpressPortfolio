@@ -1,0 +1,119 @@
+/* .navbar {
+  background-color: #333;
+}
+
+.navbar .nav-item {
+  display: inline-block;
+}
+
+.navbar .nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: #ddd;
+} */
+
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #343a40; /* Dark background */
+  padding: 15px 30px; /* Padding for spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff; /* White text */
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Space between logo and text */
+  border-radius: 50%; /* Optional: make the logo circular */
+}
+
+/* Navbar Links */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  gap: 20px; /* Spacing between links */
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative; /* Needed for hover effects */
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #f8f9fa; /* Light gray color for text */
+  text-decoration: none;
+  transition: color 0.3s ease, padding 0.3s ease; /* Smooth transition */
+  padding: 8px 12px; /* Padding around the text */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Highlight color on hover */
+  padding-bottom: 12px; /* Adds slight effect on hover */
+  border-bottom: 2px solid #007bff; /* Underline effect on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      background-color: #343a40; /* Ensure background on mobile */
+  }
+
+  .navbar-nav {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center; /* Center links */
+  }
+
+  .nav-item {
+      margin-bottom: 10px; /* Spacing between items */
+  }
+
+  .navbar-brand {
+      text-align: center;
+      margin-bottom: 20px; /* Spacing between logo and links */
+  }
+}
+
+/* Navbar Toggle Button for Mobile */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* Light color for the toggle icon */
+}
+
+/* Additional Styling for the "Active" State */
+.nav-item.active .nav-link {
+  color: #007bff; /* Blue color for active link */
+  font-weight: bold;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+body {
+  padding-top: 70px; /* Adjust content below navbar */
+}

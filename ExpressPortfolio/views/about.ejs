@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Nihar Dholaria</title>
+    <link rel="stylesheet" href="/stylesheets/about.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <%- include('partials/nav') %> <!-- Include navbar -->
+
+    <!-- About Me Section -->
+    <section class="about-me-section">
+        <div class="container">
+            <div class="about-me-content">
+                <h1 class="section-title">About Me</h1>
+                <p class="about-description">
+                    Hello! I'm Nihar Dholaria, an AI student and passionate software developer. I have one year of industry experience in software development and am dedicated to advancing my knowledge in Artificial Intelligence. My goal is to become a proficient AI engineer and contribute to cutting-edge innovations in the field.
+                </p>
+                <a class="resume-btn" href="/images/Nihar Dholaria.pdf" target="_blank">View My Resume</a>
+
+                <h2 class="skills-title">Skills & Technologies</h2>
+                <ul class="skills-list">
+                    <li>JavaScript</li>
+                    <li>ReactJS</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>Python</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="/images/Laptop-photo.png" alt="Nihar Dholaria">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+    <script src="/public/javascripts/script.js"></script>
+</body>
+</html>

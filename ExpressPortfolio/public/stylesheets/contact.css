@@ -1,0 +1,166 @@
+/* General Body and Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Contact Form Container */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-btn {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #16a085;
+}
+
+/* Contact Details Section */
+.contact-details {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-details h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #1abc9c;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #16a085;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-btn {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .form-input, .form-textarea {
+        font-size: 0.9rem;
+    }
+
+    .form-btn {
+        font-size: 1rem;
+    }
+}

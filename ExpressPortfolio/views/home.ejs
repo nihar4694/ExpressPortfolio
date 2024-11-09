@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/navbar.css">
+  <link rel="stylesheet" href="/stylesheets/home.css">
+  <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <%- include('partials/nav') %>
+  
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Nihar</h1>
+                <p class="hero-description">I'm an AI student with industry experience in software development. My goal is to become an AI engineer in the near future.</p>
+                <div class="cta-buttons">
+                    <a href="/about" class="cta-button">Learn More About Me</a>
+                    <a href="/projects" class="cta-button cta-button-secondary">View My Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/sketch03.jpg" alt="Nihar Dholaria">
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <%- include('partials/footer') %>
+
+  <!-- Include JavaScript -->
+  <script src="/public/javascripts/script.js"></script>
+</body>
+</html>
